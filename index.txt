@@ -13,7 +13,7 @@
   }
   body{font-family:Georgia,serif;background:var(--cream);color:var(--ink)}
 
-  /* PAGE SYSTEM */
+  /* ── PAGE SYSTEM ── */
   .page-radio{display:none}
   .page{display:none;min-height:100vh}
   #show-home:checked ~ #site #page-home{display:block}
@@ -38,7 +38,7 @@
   #show-scotland:checked ~ #site .tab-scotland,
   #show-england:checked ~ #site .tab-england{color:var(--ink);background:var(--warm-white);border-bottom:2px solid var(--gold)}
 
-  /* NAV */
+  /* ── NAV ── */
   nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 3rem;background:rgba(250,248,245,0.96);border-bottom:1px solid var(--sand)}
   .nav-logo{font-size:1.2rem;color:var(--ink);cursor:pointer;background:none;border:none;padding:0;font-family:Georgia,serif}
   .nav-logo em{font-style:italic;color:var(--gold)}
@@ -46,14 +46,14 @@
   .nav-link{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);cursor:pointer;font-family:Helvetica,Arial,sans-serif;padding-bottom:2px;transition:color 0.2s}
   .nav-link:hover{color:var(--ink)}
 
-  /* HOME */
+  /* ── HOME ── */
   .hero-intro{text-align:center;padding:3rem 2rem 2rem}
   .eyebrow{font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--taupe);display:block;margin-bottom:1.2rem;font-family:Helvetica,Arial,sans-serif}
   .hero-title{font-size:clamp(2rem,5vw,4.5rem);font-weight:normal;line-height:1.1;color:var(--ink);margin-bottom:1rem}
   .hero-title em{font-style:italic;color:var(--gold)}
   .hero-sub{font-size:0.88rem;line-height:1.9;color:var(--ink-light);max-width:520px;margin:0 auto;font-family:Helvetica,Arial,sans-serif}
 
-  /* COUNTRY CARDS */
+  /* ── COUNTRY CARDS ── */
   .country-grid{display:flex;gap:6px;padding:2.5rem 3rem 0}
   .country-slot{flex:1;position:relative;overflow:hidden;height:280px;min-height:280px}
   .country-btn{display:block;width:100%;height:280px;position:relative;cursor:pointer;border:none;padding:0;background:none;overflow:hidden}
@@ -68,20 +68,20 @@
   .bg-s{background:linear-gradient(160deg,#c8cdd4,#8896a8)}
   .bg-e{background:linear-gradient(160deg,#c8d4c8,#88a888)}
 
-  /* UPLOAD ROW */
+  /* ── COVER UPLOAD ROW ── */
   .upload-row{display:flex;gap:6px;padding:6px 3rem 0}
   .upload-label{flex:1;padding:0.7rem 0.5rem;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--taupe);background:var(--warm-white);border:1px solid var(--sand);cursor:pointer;font-family:Helvetica,Arial,sans-serif;text-align:center;transition:all 0.2s}
   .upload-label:hover{color:var(--ink);border-color:var(--gold)}
   .upload-label input{display:none}
 
-  /* STATS */
+  /* ── STATS ── */
   .stats-bar{background:var(--ink);color:var(--cream);display:flex;justify-content:center;margin-top:2rem}
   .stat{padding:1.8rem 3rem;text-align:center;border-right:1px solid rgba(255,255,255,0.08)}
   .stat:last-child{border-right:none}
   .stat-num{font-size:2.2rem;display:block;color:var(--gold)}
   .stat-label{font-size:0.56rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--stone);display:block;margin-top:0.3rem;font-family:Helvetica,Arial,sans-serif}
 
-  /* ABOUT */
+  /* ── ABOUT ── */
   .about-section{background:var(--warm-white);display:grid;grid-template-columns:1fr 1.4fr;border-top:1px solid var(--sand)}
   .about-img{min-height:350px;background:linear-gradient(160deg,#d0c8bc,#a09080)}
   .about-text{padding:4rem 3rem}
@@ -89,14 +89,14 @@
   .section-title{font-size:clamp(1.5rem,2.5vw,2.5rem);font-weight:normal;line-height:1.2;color:var(--ink);margin-bottom:1.5rem}
   .about-text p{font-size:0.86rem;line-height:1.95;color:var(--ink-light);margin-bottom:1rem;font-family:Helvetica,Arial,sans-serif}
 
-  /* FOOTER */
+  /* ── FOOTER ── */
   footer{background:var(--ink);color:var(--cream);padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between}
   .footer-logo{font-size:1.1rem}
   .footer-logo em{font-style:italic;color:var(--gold)}
   .footer-home{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--stone);cursor:pointer;font-family:Helvetica,Arial,sans-serif}
   .footer-copy{font-size:0.6rem;color:var(--taupe);font-family:Helvetica,Arial,sans-serif}
 
-  /* GALLERY PAGES */
+  /* ── GALLERY PAGES ── */
   .gallery-header{padding:2.5rem 3rem 2rem;border-bottom:1px solid var(--sand)}
   .breadcrumb{font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;font-family:Helvetica,Arial,sans-serif}
   .breadcrumb::before{content:'';display:block;width:16px;height:1px;background:var(--gold)}
@@ -106,50 +106,74 @@
   .gallery-title em{font-style:italic;color:var(--gold)}
   .gallery-sub{font-size:0.84rem;line-height:1.8;color:var(--ink-light);margin-top:0.8rem;max-width:440px;font-family:Helvetica,Arial,sans-serif}
 
-  /* COUNTRY TAB BAR */
+  /* ── COUNTRY TAB BAR ── */
   .tab-bar{display:flex;border-bottom:1px solid var(--sand);overflow-x:auto}
   .tab-btn{padding:1rem 2rem;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;font-family:Helvetica,Arial,sans-serif;background:none;border-top:none;border-left:none;border-right:none}
   .tab-btn:hover{color:var(--ink);background:var(--warm-white)}
   .tab-home-btn{padding:1rem 2rem;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-weight:bold;border-bottom:2px solid transparent;transition:all 0.2s;margin-left:auto}
   .tab-home-btn:hover{color:var(--gold)}
 
-  /* GALLERY 1 & 2 SUB-TABS */
+  /* ── GALLERY 1 & 2 SUB-TABS ── */
   .gallery-tabs{display:flex;gap:0;border-bottom:1px solid var(--sand);background:var(--warm-white)}
   .gallery-tab{padding:0.9rem 2.5rem;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--taupe);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;font-family:Helvetica,Arial,sans-serif;background:none;border-top:none;border-left:none;border-right:none}
   .gallery-tab:hover{color:var(--ink)}
   .gallery-tab.active{color:var(--ink);border-bottom:2px solid var(--gold);font-weight:bold}
 
-  /* GALLERY PANELS */
+  /* ── GALLERY PANELS ── */
   .gallery-panel{display:none}
   .gallery-panel.active{display:block}
 
-  /* ADD PHOTOS BAR */
-  .add-bar{padding:1.2rem 3rem;display:flex;align-items:center;gap:1rem;border-bottom:1px solid var(--sand)}
-  .add-label{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);border:1px solid var(--gold);padding:0.5rem 1rem;cursor:pointer;font-family:Helvetica,Arial,sans-serif;transition:all 0.2s}
-  .add-label:hover{background:var(--gold);color:#fff}
-  .add-label input{display:none}
-  .add-hint{font-size:0.68rem;color:var(--taupe);font-family:Helvetica,Arial,sans-serif}
+  /* ── FULL WIDTH STACKED PHOTO LAYOUT ── */
+  .photo-stack{padding:0}
+  .photo-stack-item{
+    width:100%;
+    cursor:pointer;
+    display:block;
+    overflow:hidden;
+    border-bottom:3px solid var(--cream);
+    position:relative;
+  }
+  .photo-stack-item img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:transform 0.5s ease;
+  }
+  .photo-stack-item:hover img{transform:scale(1.01)}
+  .photo-stack-item .zoom-hint{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(44,40,37,0);
+    transition:background 0.3s;
+  }
+  .photo-stack-item:hover .zoom-hint{background:rgba(44,40,37,0.15)}
+  .zoom-hint-icon{
+    width:52px;height:52px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,0.8);
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;transform:scale(0.7);
+    transition:opacity 0.3s,transform 0.3s;
+    font-size:1.4rem;color:rgba(255,255,255,0.9);
+  }
+  .photo-stack-item:hover .zoom-hint-icon{opacity:1;transform:scale(1)}
 
-  /* PHOTO GRID */
-  .photo-grid{padding:2rem 3rem 4rem;columns:3;column-gap:8px}
-  .photo-card{break-inside:avoid;margin-bottom:8px;overflow:hidden;background:var(--sand);cursor:pointer;position:relative}
-  .photo-card img{width:100%;display:block;transition:transform 0.4s}
-  .photo-card:hover img{transform:scale(1.03)}
-  .photo-card::after{content:'⊕';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:2rem;color:rgba(255,255,255,0);transition:color 0.3s}
-  .photo-card:hover::after{color:rgba(255,255,255,0.8)}
   .empty-state{padding:5rem 3rem;text-align:center;font-size:1.1rem;font-style:italic;color:var(--stone)}
   .empty-state span{display:block;font-size:0.75rem;font-style:normal;color:var(--taupe);margin-top:0.5rem;font-family:Helvetica,Arial,sans-serif}
 
-  /* LIGHTBOX */
-  .lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(20,18,16,0.97);align-items:center;justify-content:center;padding:2rem}
+  /* ── LIGHTBOX ── */
+  .lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,8,6,0.97);align-items:center;justify-content:center}
   .lightbox.open{display:flex}
-  .lb-img{max-width:100%;max-height:88vh;object-fit:contain;display:block;margin:0 auto;box-shadow:0 4px 40px rgba(0,0,0,0.5)}
-  .lb-close{position:fixed;top:1.5rem;right:2rem;font-size:2rem;color:rgba(255,255,255,0.6);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s}
+  .lb-img{max-width:100vw;max-height:100vh;object-fit:contain;display:block}
+  .lb-close{position:fixed;top:1.2rem;right:1.8rem;font-size:2rem;color:rgba(255,255,255,0.55);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s;z-index:10}
   .lb-close:hover{color:#fff}
-  .lb-prev{position:fixed;left:1.5rem;top:50%;transform:translateY(-50%);font-size:3rem;color:rgba(255,255,255,0.5);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s;padding:1rem}
-  .lb-next{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);font-size:3rem;color:rgba(255,255,255,0.5);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s;padding:1rem}
+  .lb-prev{position:fixed;left:1rem;top:50%;transform:translateY(-50%);font-size:3.5rem;color:rgba(255,255,255,0.4);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s;padding:0.5rem 1rem;z-index:10}
+  .lb-next{position:fixed;right:1rem;top:50%;transform:translateY(-50%);font-size:3.5rem;color:rgba(255,255,255,0.4);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s;padding:0.5rem 1rem;z-index:10}
   .lb-prev:hover,.lb-next:hover{color:#fff}
-  .lb-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);font-family:Helvetica,Arial,sans-serif}
+  .lb-counter{position:fixed;bottom:1.2rem;left:50%;transform:translateX(-50%);font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35);font-family:Helvetica,Arial,sans-serif}
 </style>
 </head>
 <body>
@@ -177,7 +201,7 @@
     </ul>
   </nav>
 
-  <!-- HOME -->
+  <!-- ═══ HOME ═══ -->
   <div class="page" id="page-home">
     <div class="hero-intro">
       <span class="eyebrow">Tony Russell · Travel Photography</span>
@@ -242,12 +266,11 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><span class="footer-copy">© 2026 Tony Russell Photography</span></footer>
   </div>
 
-  <!-- VIETNAM -->
+  <!-- ═══ VIETNAM ═══ -->
   <div class="page" id="page-vietnam">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Vietnam</div>
       <h1 class="gallery-title"><em>Vietnam</em></h1>
-      <p class="gallery-sub">Photographs from Vietnam. Select Gallery 1 or Gallery 2 below.</p>
     </div>
     <div class="tab-bar">
       <label class="tab-btn tab-vietnam" for="show-vietnam">Vietnam</label>
@@ -261,26 +284,28 @@
       <button class="gallery-tab active" onclick="switchGallery('vietnam',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('vietnam',2,this)">Gallery 2</button>
     </div>
-    <div class="add-bar">
-      <label class="add-label" id="add-vietnam-1">+ Add to Gallery 1<input type="file" accept="image/*" multiple onchange="addPhotos('vietnam',1,this)"></label>
-      <label class="add-label" id="add-vietnam-2" style="display:none">+ Add to Gallery 2<input type="file" accept="image/*" multiple onchange="addPhotos('vietnam',2,this)"></label>
-      <span class="add-hint" id="count-vietnam-1">0 photographs</span>
-      <span class="add-hint" id="count-vietnam-2" style="display:none">0 photographs</span>
-    </div>
     <div class="gallery-panel active" id="gallery-vietnam-1">
-<div class="photo-card"><img src="L1022208.jpg" alt=“Lantern Boats-Hoa-Lu”></div>
-<div class="photo-card"><img src="L1040009.jpg" alt=“Street-vendor”></div>
-<div class="empty-state">Vietnam — Gallery 1<span>Click "+ Add to Gallery 1" above to add your photographs</span></div></div>
-    <div class="gallery-panel" id="gallery-vietnam-2"><div class="empty-state">Vietnam — Gallery 2<span>Click "+ Add to Gallery 2" above to add your photographs</span></div></div>
+      <div class="photo-stack" id="stack-vietnam-1"></div>
+<div class="photo-stack-item">
+<div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1022208.jpg" alt=“Vietnam”></div>
+<div class="photo-card"><img src=“L1040009.jpg" alt="Vietnam”></div>
+<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1040009.jpg" alt=“Vietnam”></div>
+<div class="photo-card"><img src=“L1040992.jpg" alt="Vietnam”></div>
+	<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1040992.jpg" alt=“L1040992”></div>
+</span></div>
+    </div>
+    <div class="gallery-panel" id="gallery-vietnam-2">
+      <div class="photo-stack" id="stack-vietnam-2"></div>
+      <div class="empty-state" id="empty-vietnam-2">Vietnam — Gallery 2<span>Add photos using the code in your guide</span></div>
+    </div>
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- CAMBODIA -->
+  <!-- ═══ CAMBODIA ═══ -->
   <div class="page" id="page-cambodia">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Cambodia</div>
       <h1 class="gallery-title"><em>Cambodia</em></h1>
-      <p class="gallery-sub">Photographs from Cambodia. Select Gallery 1 or Gallery 2 below.</p>
     </div>
     <div class="tab-bar">
       <label class="tab-btn tab-vietnam" for="show-vietnam">Vietnam</label>
@@ -294,23 +319,22 @@
       <button class="gallery-tab active" onclick="switchGallery('cambodia',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('cambodia',2,this)">Gallery 2</button>
     </div>
-    <div class="add-bar">
-      <label class="add-label" id="add-cambodia-1">+ Add to Gallery 1<input type="file" accept="image/*" multiple onchange="addPhotos('cambodia',1,this)"></label>
-      <label class="add-label" id="add-cambodia-2" style="display:none">+ Add to Gallery 2<input type="file" accept="image/*" multiple onchange="addPhotos('cambodia',2,this)"></label>
-      <span class="add-hint" id="count-cambodia-1">0 photographs</span>
-      <span class="add-hint" id="count-cambodia-2" style="display:none">0 photographs</span>
+    <div class="gallery-panel active" id="gallery-cambodia-1">
+      <div class="photo-stack" id="stack-cambodia-1"></div>
+      <div class="empty-state" id="empty-cambodia-1">Cambodia — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
-    <div class="gallery-panel active" id="gallery-cambodia-1"><div class="empty-state">Cambodia — Gallery 1<span>Click "+ Add to Gallery 1" above to add your photographs</span></div></div>
-    <div class="gallery-panel" id="gallery-cambodia-2"><div class="empty-state">Cambodia — Gallery 2<span>Click "+ Add to Gallery 2" above to add your photographs</span></div></div>
+    <div class="gallery-panel" id="gallery-cambodia-2">
+      <div class="photo-stack" id="stack-cambodia-2"></div>
+      <div class="empty-state" id="empty-cambodia-2">Cambodia — Gallery 2<span>Add photos using the code in your guide</span></div>
+    </div>
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- THAILAND -->
+  <!-- ═══ THAILAND ═══ -->
   <div class="page" id="page-thailand">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Thailand</div>
       <h1 class="gallery-title"><em>Thailand</em></h1>
-      <p class="gallery-sub">Photographs from Thailand. Select Gallery 1 or Gallery 2 below.</p>
     </div>
     <div class="tab-bar">
       <label class="tab-btn tab-vietnam" for="show-vietnam">Vietnam</label>
@@ -324,23 +348,22 @@
       <button class="gallery-tab active" onclick="switchGallery('thailand',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('thailand',2,this)">Gallery 2</button>
     </div>
-    <div class="add-bar">
-      <label class="add-label" id="add-thailand-1">+ Add to Gallery 1<input type="file" accept="image/*" multiple onchange="addPhotos('thailand',1,this)"></label>
-      <label class="add-label" id="add-thailand-2" style="display:none">+ Add to Gallery 2<input type="file" accept="image/*" multiple onchange="addPhotos('thailand',2,this)"></label>
-      <span class="add-hint" id="count-thailand-1">0 photographs</span>
-      <span class="add-hint" id="count-thailand-2" style="display:none">0 photographs</span>
+    <div class="gallery-panel active" id="gallery-thailand-1">
+      <div class="photo-stack" id="stack-thailand-1"></div>
+      <div class="empty-state" id="empty-thailand-1">Thailand — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
-    <div class="gallery-panel active" id="gallery-thailand-1"><div class="empty-state">Thailand — Gallery 1<span>Click "+ Add to Gallery 1" above to add your photographs</span></div></div>
-    <div class="gallery-panel" id="gallery-thailand-2"><div class="empty-state">Thailand — Gallery 2<span>Click "+ Add to Gallery 2" above to add your photographs</span></div></div>
+    <div class="gallery-panel" id="gallery-thailand-2">
+      <div class="photo-stack" id="stack-thailand-2"></div>
+      <div class="empty-state" id="empty-thailand-2">Thailand — Gallery 2<span>Add photos using the code in your guide</span></div>
+    </div>
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- SCOTLAND -->
+  <!-- ═══ SCOTLAND ═══ -->
   <div class="page" id="page-scotland">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Scotland</div>
       <h1 class="gallery-title"><em>Scotland</em></h1>
-      <p class="gallery-sub">Photographs from Scotland. Select Gallery 1 or Gallery 2 below.</p>
     </div>
     <div class="tab-bar">
       <label class="tab-btn tab-vietnam" for="show-vietnam">Vietnam</label>
@@ -354,23 +377,22 @@
       <button class="gallery-tab active" onclick="switchGallery('scotland',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('scotland',2,this)">Gallery 2</button>
     </div>
-    <div class="add-bar">
-      <label class="add-label" id="add-scotland-1">+ Add to Gallery 1<input type="file" accept="image/*" multiple onchange="addPhotos('scotland',1,this)"></label>
-      <label class="add-label" id="add-scotland-2" style="display:none">+ Add to Gallery 2<input type="file" accept="image/*" multiple onchange="addPhotos('scotland',2,this)"></label>
-      <span class="add-hint" id="count-scotland-1">0 photographs</span>
-      <span class="add-hint" id="count-scotland-2" style="display:none">0 photographs</span>
+    <div class="gallery-panel active" id="gallery-scotland-1">
+      <div class="photo-stack" id="stack-scotland-1"></div>
+      <div class="empty-state" id="empty-scotland-1">Scotland — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
-    <div class="gallery-panel active" id="gallery-scotland-1"><div class="empty-state">Scotland — Gallery 1<span>Click "+ Add to Gallery 1" above to add your photographs</span></div></div>
-    <div class="gallery-panel" id="gallery-scotland-2"><div class="empty-state">Scotland — Gallery 2<span>Click "+ Add to Gallery 2" above to add your photographs</span></div></div>
+    <div class="gallery-panel" id="gallery-scotland-2">
+      <div class="photo-stack" id="stack-scotland-2"></div>
+      <div class="empty-state" id="empty-scotland-2">Scotland — Gallery 2<span>Add photos using the code in your guide</span></div>
+    </div>
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- ENGLAND -->
+  <!-- ═══ ENGLAND ═══ -->
   <div class="page" id="page-england">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / England</div>
       <h1 class="gallery-title"><em>England</em></h1>
-      <p class="gallery-sub">Photographs from England. Select Gallery 1 or Gallery 2 below.</p>
     </div>
     <div class="tab-bar">
       <label class="tab-btn tab-vietnam" for="show-vietnam">Vietnam</label>
@@ -384,32 +406,30 @@
       <button class="gallery-tab active" onclick="switchGallery('england',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('england',2,this)">Gallery 2</button>
     </div>
-    <div class="add-bar">
-      <label class="add-label" id="add-england-1">+ Add to Gallery 1<input type="file" accept="image/*" multiple onchange="addPhotos('england',1,this)"></label>
-      <label class="add-label" id="add-england-2" style="display:none">+ Add to Gallery 2<input type="file" accept="image/*" multiple onchange="addPhotos('england',2,this)"></label>
-      <span class="add-hint" id="count-england-1">0 photographs</span>
-      <span class="add-hint" id="count-england-2" style="display:none">0 photographs</span>
+    <div class="gallery-panel active" id="gallery-england-1">
+      <div class="photo-stack" id="stack-england-1"></div>
+      <div class="empty-state" id="empty-england-1">England — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
-    <div class="gallery-panel active" id="gallery-england-1"><div class="empty-state">England — Gallery 1<span>Click "+ Add to Gallery 1" above to add your photographs</span></div></div>
-    <div class="gallery-panel" id="gallery-england-2"><div class="empty-state">England — Gallery 2<span>Click "+ Add to Gallery 2" above to add your photographs</span></div></div>
+    <div class="gallery-panel" id="gallery-england-2">
+      <div class="photo-stack" id="stack-england-2"></div>
+      <div class="empty-state" id="empty-england-2">England — Gallery 2<span>Add photos using the code in your guide</span></div>
+    </div>
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
 </div>
 
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-  <button class="lb-close" onclick="closeLightbox()">✕</button>
-  <button class="lb-prev" onclick="navLightbox(-1);event.stopPropagation()">‹</button>
-  <button class="lb-next" onclick="navLightbox(1);event.stopPropagation()">›</button>
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">✕</button>
+  <button class="lb-prev" id="lb-prev">‹</button>
+  <button class="lb-next" id="lb-next">›</button>
   <img class="lb-img" id="lb-img" src="" alt="">
   <div class="lb-counter" id="lb-counter"></div>
 </div>
 
 <script>
-var lbPhotos=[];
-var lbIndex=0;
-
+/* ── Cover photo upload ── */
 function setCover(id,input){
   if(!input.files[0])return;
   var r=new FileReader();
@@ -422,84 +442,77 @@ function setCover(id,input){
   r.readAsDataURL(input.files[0]);
 }
 
+/* ── Gallery tab switching ── */
 function switchGallery(country,num,btn){
-  // Switch active tab button
   var tabs=btn.closest('.gallery-tabs').querySelectorAll('.gallery-tab');
   tabs.forEach(function(t){t.classList.remove('active')});
   btn.classList.add('active');
-  // Switch panels
   var page=document.getElementById('page-'+country);
   page.querySelectorAll('.gallery-panel').forEach(function(p){p.classList.remove('active')});
   document.getElementById('gallery-'+country+'-'+num).classList.add('active');
-  // Switch add buttons and counts
-  [1,2].forEach(function(n){
-    var addEl=document.getElementById('add-'+country+'-'+n);
-    var countEl=document.getElementById('count-'+country+'-'+n);
-    if(addEl) addEl.style.display = n===num ? 'inline-flex' : 'none';
-    if(countEl) countEl.style.display = n===num ? 'inline' : 'none';
-  });
 }
 
-function addPhotos(country,num,input){
-  var files=Array.from(input.files).filter(function(f){return f.type.startsWith('image/')});
-  if(!files.length)return;
-  var grid=document.getElementById('gallery-'+country+'-'+num);
-  var empty=grid.querySelector('.empty-state');
-  if(empty)empty.remove();
-  files.forEach(function(file){
-    var r=new FileReader();
-    r.onload=function(e){
-      var card=document.createElement('div');
-      card.className='photo-card';
-      var img=document.createElement('img');
-      img.src=e.target.result;
-      img.alt=file.name;
-      card.appendChild(img);
-      card.addEventListener('click',function(){openLightbox(country,num,card)});
-      grid.appendChild(card);
-      var total=grid.querySelectorAll('.photo-card').length;
-      document.getElementById('count-'+country+'-'+num).textContent=total+' photograph'+(total===1?'':'s');
-    };
-    r.readAsDataURL(file);
-  });
+/* ── Lightbox ── */
+var lbPhotos=[];
+var lbIndex=0;
+
+function buildLightboxFromStack(stack){
+  lbPhotos=Array.from(stack.querySelectorAll('img')).map(function(i){return i.src});
 }
 
-function openLightbox(country,num,card){
-  var grid=document.getElementById('gallery-'+country+'-'+num);
-  var cards=Array.from(grid.querySelectorAll('.photo-card'));
-  lbPhotos=cards.map(function(c){return c.querySelector('img').src});
-  lbIndex=cards.indexOf(card);
-  showLightboxPhoto();
+function openLightbox(stack,index){
+  buildLightboxFromStack(stack);
+  lbIndex=index;
+  showLbPhoto();
   document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow='hidden';
 }
 
-function showLightboxPhoto(){
+function showLbPhoto(){
   document.getElementById('lb-img').src=lbPhotos[lbIndex];
   document.getElementById('lb-counter').textContent=(lbIndex+1)+' / '+lbPhotos.length;
 }
 
-function navLightbox(dir){
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+function navLb(dir){
   lbIndex=(lbIndex+dir+lbPhotos.length)%lbPhotos.length;
-  showLightboxPhoto();
+  showLbPhoto();
 }
 
-function closeLightbox(e){
-  if(e && e.target!==document.getElementById('lightbox') && e.target!==document.querySelector('.lb-close')) return;
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow='';
-}
-
-document.addEventListener('keydown',function(e){
-  var lb=document.getElementById('lightbox');
-  if(!lb.classList.contains('open'))return;
-  if(e.key==='Escape')closeLightbox();
-  if(e.key==='ArrowLeft')navLightbox(-1);
-  if(e.key==='ArrowRight')navLightbox(1);
+document.getElementById('lb-close').addEventListener('click',closeLightbox);
+document.getElementById('lb-prev').addEventListener('click',function(){navLb(-1)});
+document.getElementById('lb-next').addEventListener('click',function(){navLb(1)});
+document.getElementById('lightbox').addEventListener('click',function(e){
+  if(e.target===this)closeLightbox();
 });
-document.querySelector('.lb-close').addEventListener('click',function(){
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow='';
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('lightbox').classList.contains('open'))return;
+  if(e.key==='Escape')closeLightbox();
+  if(e.key==='ArrowLeft')navLb(-1);
+  if(e.key==='ArrowRight')navLb(1);
+});
+
+/* ── Wire up existing photo-stack items on page load ── */
+function wireStack(stack){
+  var items=stack.querySelectorAll('.photo-stack-item');
+  items.forEach(function(item,i){
+    item.addEventListener('click',function(){openLightbox(stack,i)});
+  });
+  /* Hide empty state if photos exist */
+  var stackId=stack.id;
+  var emptyId=stackId.replace('stack-','empty-');
+  var emptyEl=document.getElementById(emptyId);
+  if(emptyEl && items.length>0) emptyEl.style.display='none';
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.photo-stack').forEach(function(stack){
+    wireStack(stack);
+  });
 });
 </script>
 </body>
