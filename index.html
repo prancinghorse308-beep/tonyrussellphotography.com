@@ -123,41 +123,41 @@
   .gallery-panel{display:none}
   .gallery-panel.active{display:block}
 
-  /* ── FULL WIDTH STACKED PHOTO LAYOUT ── */
-  .photo-stack{padding:0}
+  /* ── 3 COLUMN PHOTO GRID ── */
+  .photo-stack{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+    padding:6px;
+  }
   .photo-stack-item{
-    width:100%;
     cursor:pointer;
-    display:block;
     overflow:hidden;
-    border-bottom:3px solid var(--cream);
     position:relative;
+    background:var(--sand);
   }
   .photo-stack-item img{
     width:100%;
-    height:auto;
+    height:100%;
+    object-fit:cover;
     display:block;
     transition:transform 0.5s ease;
   }
-  .photo-stack-item:hover img{transform:scale(1.01)}
+  .photo-stack-item:hover img{transform:scale(1.04)}
   .photo-stack-item .zoom-hint{
-    position:absolute;
-    inset:0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
     background:rgba(44,40,37,0);
     transition:background 0.3s;
   }
-  .photo-stack-item:hover .zoom-hint{background:rgba(44,40,37,0.15)}
+  .photo-stack-item:hover .zoom-hint{background:rgba(44,40,37,0.2)}
   .zoom-hint-icon{
-    width:52px;height:52px;
-    border-radius:50%;
-    border:2px solid rgba(255,255,255,0.8);
+    width:48px;height:48px;border-radius:50%;
+    border:2px solid rgba(255,255,255,0.85);
     display:flex;align-items:center;justify-content:center;
     opacity:0;transform:scale(0.7);
     transition:opacity 0.3s,transform 0.3s;
-    font-size:1.4rem;color:rgba(255,255,255,0.9);
+    font-size:1.3rem;color:rgba(255,255,255,0.9);
   }
   .photo-stack-item:hover .zoom-hint-icon{opacity:1;transform:scale(1)}
 
@@ -285,14 +285,10 @@
       <button class="gallery-tab" onclick="switchGallery('vietnam',2,this)">Gallery 2</button>
     </div>
     <div class="gallery-panel active" id="gallery-vietnam-1">
-      <div class="photo-stack" id="stack-vietnam-1"></div>
-<div class="photo-stack-item">
-<div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1022208.jpg" alt=“Vietnam”></div>
-<div class="photo-card"><img src=“L1040009.jpg" alt="Vietnam”></div>
-<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1040009.jpg" alt=“Vietnam”></div>
-<div class="photo-card"><img src=“L1040992.jpg" alt="Vietnam”></div>
-	<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1040992.jpg" alt=“L1040992”></div>
-</span></div>
+      <div class="photo-stack" id="stack-vietnam-1"><div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1022208.jpg" alt=“Lantern Boats, Hoa Lu”></div>
+      <div class="photo-stack" id="stack-vietnam-1"><div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1040009.jpg" alt=“Street vendor selling ginger in Hot An”></div>
+    <div class="photo-stack" id="stack-vietnam-1"><div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src=“L1040992.jpg" alt=“Shoulder pole street vendor in How An”></div>
+      <div class="empty-state" id="empty-vietnam-1">Vietnam — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
     <div class="gallery-panel" id="gallery-vietnam-2">
       <div class="photo-stack" id="stack-vietnam-2"></div>
