@@ -12,8 +12,6 @@
     --ink-light:#5a5550;--gold:#c9a96e;
   }
   body{font-family:Georgia,serif;background:var(--cream);color:var(--ink)}
-
-  /* ── PAGE SYSTEM ── */
   .page-radio{display:none}
   .page{display:none;min-height:100vh}
   #show-home:checked ~ #site #page-home{display:block}
@@ -22,38 +20,28 @@
   #show-thailand:checked ~ #site #page-thailand{display:block}
   #show-scotland:checked ~ #site #page-scotland{display:block}
   #show-england:checked ~ #site #page-england{display:block}
-
-  /* Active nav */
   #show-home:checked ~ #site .nl-home,
   #show-vietnam:checked ~ #site .nl-vietnam,
   #show-cambodia:checked ~ #site .nl-cambodia,
   #show-thailand:checked ~ #site .nl-thailand,
   #show-scotland:checked ~ #site .nl-scotland,
   #show-england:checked ~ #site .nl-england{color:var(--ink);border-bottom:1px solid var(--gold)}
-
-  /* Active country tab */
   #show-vietnam:checked ~ #site .tab-vietnam,
   #show-cambodia:checked ~ #site .tab-cambodia,
   #show-thailand:checked ~ #site .tab-thailand,
   #show-scotland:checked ~ #site .tab-scotland,
   #show-england:checked ~ #site .tab-england{color:var(--ink);background:var(--warm-white);border-bottom:2px solid var(--gold)}
-
-  /* ── NAV ── */
   nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 3rem;background:rgba(250,248,245,0.96);border-bottom:1px solid var(--sand)}
   .nav-logo{font-size:1.2rem;color:var(--ink);cursor:pointer;background:none;border:none;padding:0;font-family:Georgia,serif}
   .nav-logo em{font-style:italic;color:var(--gold)}
   .nav-links{display:flex;gap:4rem;list-style:none}
   .nav-link{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);cursor:pointer;font-family:Helvetica,Arial,sans-serif;padding-bottom:2px;transition:color 0.2s}
   .nav-link:hover{color:var(--ink)}
-
-  /* ── HOME ── */
   .hero-intro{text-align:center;padding:3rem 2rem 2rem}
   .eyebrow{font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--taupe);display:block;margin-bottom:1.2rem;font-family:Helvetica,Arial,sans-serif}
   .hero-title{font-size:clamp(2rem,5vw,4.5rem);font-weight:normal;line-height:1.1;color:var(--ink);margin-bottom:1rem}
   .hero-title em{font-style:italic;color:var(--gold)}
   .hero-sub{font-size:0.88rem;line-height:1.9;color:var(--ink-light);max-width:520px;margin:0 auto;font-family:Helvetica,Arial,sans-serif}
-
-  /* ── COUNTRY CARDS ── */
   .country-grid{display:flex;gap:6px;padding:2.5rem 3rem 0}
   .country-slot{flex:1;position:relative;overflow:hidden;height:280px;min-height:280px}
   .country-btn{display:block;width:100%;height:280px;position:relative;cursor:pointer;border:none;padding:0;background:none;overflow:hidden}
@@ -67,36 +55,26 @@
   .bg-t{background:linear-gradient(160deg,#d8c5b0,#a88e6c)}
   .bg-s{background:linear-gradient(160deg,#c8cdd4,#8896a8)}
   .bg-e{background:linear-gradient(160deg,#c8d4c8,#88a888)}
-
-  /* ── COVER UPLOAD ROW ── */
   .upload-row{display:flex;gap:6px;padding:6px 3rem 0}
   .upload-label{flex:1;padding:0.7rem 0.5rem;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--taupe);background:var(--warm-white);border:1px solid var(--sand);cursor:pointer;font-family:Helvetica,Arial,sans-serif;text-align:center;transition:all 0.2s}
   .upload-label:hover{color:var(--ink);border-color:var(--gold)}
   .upload-label input{display:none}
-
-  /* ── STATS ── */
   .stats-bar{background:var(--ink);color:var(--cream);display:flex;justify-content:center;margin-top:2rem}
   .stat{padding:1.8rem 3rem;text-align:center;border-right:1px solid rgba(255,255,255,0.08)}
   .stat:last-child{border-right:none}
   .stat-num{font-size:2.2rem;display:block;color:var(--gold)}
   .stat-label{font-size:0.56rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--stone);display:block;margin-top:0.3rem;font-family:Helvetica,Arial,sans-serif}
-
-  /* ── ABOUT ── */
   .about-section{background:var(--warm-white);display:grid;grid-template-columns:1fr 1.4fr;border-top:1px solid var(--sand)}
   .about-img{min-height:350px;background:linear-gradient(160deg,#d0c8bc,#a09080)}
   .about-text{padding:4rem 3rem}
   .section-label{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;display:block;font-family:Helvetica,Arial,sans-serif}
   .section-title{font-size:clamp(1.5rem,2.5vw,2.5rem);font-weight:normal;line-height:1.2;color:var(--ink);margin-bottom:1.5rem}
   .about-text p{font-size:0.86rem;line-height:1.95;color:var(--ink-light);margin-bottom:1rem;font-family:Helvetica,Arial,sans-serif}
-
-  /* ── FOOTER ── */
   footer{background:var(--ink);color:var(--cream);padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between}
   .footer-logo{font-size:1.1rem}
   .footer-logo em{font-style:italic;color:var(--gold)}
   .footer-home{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--stone);cursor:pointer;font-family:Helvetica,Arial,sans-serif}
   .footer-copy{font-size:0.6rem;color:var(--taupe);font-family:Helvetica,Arial,sans-serif}
-
-  /* ── GALLERY PAGES ── */
   .gallery-header{padding:2.5rem 3rem 2rem;border-bottom:1px solid var(--sand)}
   .breadcrumb{font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;font-family:Helvetica,Arial,sans-serif}
   .breadcrumb::before{content:'';display:block;width:16px;height:1px;background:var(--gold)}
@@ -104,68 +82,27 @@
   .breadcrumb label:hover{color:var(--gold)}
   .gallery-title{font-size:clamp(2.5rem,6vw,5rem);font-weight:normal;color:var(--ink)}
   .gallery-title em{font-style:italic;color:var(--gold)}
-  .gallery-sub{font-size:0.84rem;line-height:1.8;color:var(--ink-light);margin-top:0.8rem;max-width:440px;font-family:Helvetica,Arial,sans-serif}
-
-  /* ── COUNTRY TAB BAR ── */
   .tab-bar{display:flex;border-bottom:1px solid var(--sand);overflow-x:auto}
   .tab-btn{padding:1rem 2rem;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;font-family:Helvetica,Arial,sans-serif;background:none;border-top:none;border-left:none;border-right:none}
   .tab-btn:hover{color:var(--ink);background:var(--warm-white)}
   .tab-home-btn{padding:1rem 2rem;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-weight:bold;border-bottom:2px solid transparent;transition:all 0.2s;margin-left:auto}
   .tab-home-btn:hover{color:var(--gold)}
-
-  /* ── GALLERY 1 & 2 SUB-TABS ── */
   .gallery-tabs{display:flex;gap:0;border-bottom:1px solid var(--sand);background:var(--warm-white)}
   .gallery-tab{padding:0.9rem 2.5rem;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--taupe);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;font-family:Helvetica,Arial,sans-serif;background:none;border-top:none;border-left:none;border-right:none}
   .gallery-tab:hover{color:var(--ink)}
   .gallery-tab.active{color:var(--ink);border-bottom:2px solid var(--gold);font-weight:bold}
-
-  /* ── GALLERY PANELS ── */
   .gallery-panel{display:none}
   .gallery-panel.active{display:block}
-
-  /* ── 3 COLUMN UNIFORM GRID ── */
-  .photo-stack{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:6px;
-    padding:6px;
-  }
-  .photo-stack-item{
-    cursor:pointer;
-    overflow:hidden;
-    position:relative;
-    background:var(--sand);
-    aspect-ratio:3/2;
-  }
-  .photo-stack-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    transition:transform 0.5s ease;
-  }
+  .photo-stack{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px}
+  .photo-stack-item{cursor:pointer;overflow:hidden;position:relative;background:var(--sand);aspect-ratio:3/2}
+  .photo-stack-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease}
   .photo-stack-item:hover img{transform:scale(1.05)}
-  .photo-stack-item .zoom-hint{
-    position:absolute;inset:0;
-    display:flex;align-items:center;justify-content:center;
-    background:rgba(44,40,37,0);
-    transition:background 0.3s;
-  }
+  .photo-stack-item .zoom-hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(44,40,37,0);transition:background 0.3s}
   .photo-stack-item:hover .zoom-hint{background:rgba(44,40,37,0.2)}
-  .zoom-hint-icon{
-    width:48px;height:48px;border-radius:50%;
-    border:2px solid rgba(255,255,255,0.85);
-    display:flex;align-items:center;justify-content:center;
-    opacity:0;transform:scale(0.7);
-    transition:opacity 0.3s,transform 0.3s;
-    font-size:1.3rem;color:rgba(255,255,255,0.9);
-  }
+  .zoom-hint-icon{width:48px;height:48px;border-radius:50%;border:2px solid rgba(255,255,255,0.85);display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(0.7);transition:opacity 0.3s,transform 0.3s;font-size:1.3rem;color:rgba(255,255,255,0.9)}
   .photo-stack-item:hover .zoom-hint-icon{opacity:1;transform:scale(1)}
-
   .empty-state{padding:5rem 3rem;text-align:center;font-size:1.1rem;font-style:italic;color:var(--stone)}
   .empty-state span{display:block;font-size:0.75rem;font-style:normal;color:var(--taupe);margin-top:0.5rem;font-family:Helvetica,Arial,sans-serif}
-
-  /* ── LIGHTBOX ── */
   .lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,8,6,0.97);align-items:center;justify-content:center}
   .lightbox.open{display:flex}
   .lb-img{max-width:100vw;max-height:100vh;object-fit:contain;display:block}
@@ -179,7 +116,6 @@
 </head>
 <body>
 
-<!-- PAGE RADIO BUTTONS -->
 <input type="radio" class="page-radio" name="page" id="show-home" checked>
 <input type="radio" class="page-radio" name="page" id="show-vietnam">
 <input type="radio" class="page-radio" name="page" id="show-cambodia">
@@ -189,7 +125,6 @@
 
 <div id="site">
 
-  <!-- NAV -->
   <nav>
     <label class="nav-logo" for="show-home">Tony Russell <em>Photography</em></label>
     <ul class="nav-links">
@@ -202,7 +137,7 @@
     </ul>
   </nav>
 
-  <!-- ═══ HOME ═══ -->
+  <!-- HOME -->
   <div class="page" id="page-home">
     <div class="hero-intro">
       <span class="eyebrow">Tony Russell · Travel Photography</span>
@@ -210,36 +145,11 @@
       <p class="hero-sub">A visual journey through the world's overlooked corners — stories told in soft morning light, long shadows, and the faces of places most pass through too quickly.</p>
     </div>
     <div class="country-grid">
-      <div class="country-slot">
-        <label class="country-btn" for="show-vietnam">
-          <div class="country-bg bg-v" id="bg-vietnam"></div>
-          <div class="country-overlay"><strong>Vietnam</strong><span>View →</span></div>
-        </label>
-      </div>
-      <div class="country-slot">
-        <label class="country-btn" for="show-cambodia">
-          <div class="country-bg bg-c" id="bg-cambodia"></div>
-          <div class="country-overlay"><strong>Cambodia</strong><span>View →</span></div>
-        </label>
-      </div>
-      <div class="country-slot">
-        <label class="country-btn" for="show-thailand">
-          <div class="country-bg bg-t" id="bg-thailand"></div>
-          <div class="country-overlay"><strong>Thailand</strong><span>View →</span></div>
-        </label>
-      </div>
-      <div class="country-slot">
-        <label class="country-btn" for="show-scotland">
-          <div class="country-bg bg-s" id="bg-scotland"></div>
-          <div class="country-overlay"><strong>Scotland</strong><span>View →</span></div>
-        </label>
-      </div>
-      <div class="country-slot">
-        <label class="country-btn" for="show-england">
-          <div class="country-bg bg-e" id="bg-england"></div>
-          <div class="country-overlay"><strong>England</strong><span>View →</span></div>
-        </label>
-      </div>
+      <div class="country-slot"><label class="country-btn" for="show-vietnam"><div class="country-bg bg-v" id="bg-vietnam"></div><div class="country-overlay"><strong>Vietnam</strong><span>View →</span></div></label></div>
+      <div class="country-slot"><label class="country-btn" for="show-cambodia"><div class="country-bg bg-c" id="bg-cambodia"></div><div class="country-overlay"><strong>Cambodia</strong><span>View →</span></div></label></div>
+      <div class="country-slot"><label class="country-btn" for="show-thailand"><div class="country-bg bg-t" id="bg-thailand"></div><div class="country-overlay"><strong>Thailand</strong><span>View →</span></div></label></div>
+      <div class="country-slot"><label class="country-btn" for="show-scotland"><div class="country-bg bg-s" id="bg-scotland"></div><div class="country-overlay"><strong>Scotland</strong><span>View →</span></div></label></div>
+      <div class="country-slot"><label class="country-btn" for="show-england"><div class="country-bg bg-e" id="bg-england"></div><div class="country-overlay"><strong>England</strong><span>View →</span></div></label></div>
     </div>
     <div class="upload-row">
       <label class="upload-label">+ Vietnam cover<input type="file" accept="image/*" onchange="setCover('bg-vietnam',this)"></label>
@@ -267,7 +177,7 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><span class="footer-copy">© 2026 Tony Russell Photography</span></footer>
   </div>
 
-  <!-- ═══ VIETNAM ═══ -->
+  <!-- VIETNAM -->
   <div class="page" id="page-vietnam">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Vietnam</div>
@@ -285,30 +195,26 @@
       <button class="gallery-tab active" onclick="switchGallery('vietnam',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('vietnam',2,this)">Gallery 2</button>
     </div>
-
-<div class="gallery-panel active" id="gallery-vietnam-1">
-  <div class="photo-stack" id="stack-vietnam-1">
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022208.jpg" alt="Lantern Boats, Hoa Lu"></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040009.jpg" alt="Street vendor selling ginger"></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040992.jpg" alt="Shoulder pole street vendor"></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040884.jpg" alt="Portrait, How An"></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040554.jpg" alt="Golden Bridge DaNang"></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040742.jpg" alt="Golden Bridge DaNang"></div>
-  <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1030025.jpg" alt=“Rice field, Tam Coc”></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1021826.jpg" alt=“Rainy night in SaPa”></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040977.jpg" alt=“Boy on a bike in Hoi An”></div>
-	<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022027.jpg" alt=“Young lady posing, Hoa Lu”></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040867.jpg" alt=“Evening boat rides, Hoi An”></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1041010.jpg" alt=“Good luck lantern sales lady in Hoi An”></div>
-	<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1030370.jpg" alt=“Row of street vendors in Hue”></div>
-<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022270.jpg" alt=“Lady on a bicycle in Hot Lu”></div>
-<div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040459.jpg" alt=“Shop in the back streets of Hoi An”></div>
-</div>
-  <div class="empty-state" id="empty-vietnam-1" style="display:none"></div>
-</div>
-    <div class="empty-state" id="empty-vietnam-1" style="display:none"></div>
+    <div class="gallery-panel active" id="gallery-vietnam-1">
+      <div class="photo-stack" id="stack-vietnam-1">
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022208.jpg" alt="Lantern Boats, Hoa Lu"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040009.jpg" alt="Street vendor selling ginger"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040992.jpg" alt="Shoulder pole street vendor"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040884.jpg" alt="Portrait, Hoi An"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040554.jpg" alt="Golden Bridge DaNang"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040742.jpg" alt="Golden Bridge DaNang"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1030025.jpg" alt="Rice field, Tam Coc"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1021826.jpg" alt="Rainy night in SaPa"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040977.jpg" alt="Boy on a bike in Hoi An"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022027.jpg" alt="Young lady posing, Hoa Lu"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040867.jpg" alt="Evening boat rides, Hoi An"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1041010.jpg" alt="Good luck lantern sales lady in Hoi An"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1030370.jpg" alt="Row of street vendors in Hue"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022270.jpg" alt="Lady on a bicycle in Hoa Lu"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040459.jpg" alt="Shop in the back streets of Hoi An"></div>
+      </div>
+      <div class="empty-state" id="empty-vietnam-1" style="display:none"></div>
     </div>
-
     <div class="gallery-panel" id="gallery-vietnam-2">
       <div class="photo-stack" id="stack-vietnam-2"></div>
       <div class="empty-state" id="empty-vietnam-2">Vietnam — Gallery 2<span>Add photos using the code in your guide</span></div>
@@ -316,7 +222,7 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- ═══ CAMBODIA ═══ -->
+  <!-- CAMBODIA -->
   <div class="page" id="page-cambodia">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Cambodia</div>
@@ -335,11 +241,11 @@
       <button class="gallery-tab" onclick="switchGallery('cambodia',2,this)">Gallery 2</button>
     </div>
     <div class="gallery-panel active" id="gallery-cambodia-1">
-      <div class="photo-stack" id="stack-cambodia-1"></div>
- <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022208.jpg" alt="Lantern Boats, Hoa Lu"></div>
-    <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040009.jpg" alt="Street vendor selling ginger"></div>
-		</div>
-      <div class="empty-state" id="empty-cambodia-1">Cambodia — Gallery 1<span>Add photos using the code in your guide</span></div>
+      <div class="photo-stack" id="stack-cambodia-1">
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022208.jpg" alt="Lantern Boats, Hoa Lu"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040009.jpg" alt="Street vendor selling ginger"></div>
+      </div>
+      <div class="empty-state" id="empty-cambodia-1" style="display:none"></div>
     </div>
     <div class="gallery-panel" id="gallery-cambodia-2">
       <div class="photo-stack" id="stack-cambodia-2"></div>
@@ -348,7 +254,7 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- ═══ THAILAND ═══ -->
+  <!-- THAILAND -->
   <div class="page" id="page-thailand">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Thailand</div>
@@ -367,8 +273,12 @@
       <button class="gallery-tab" onclick="switchGallery('thailand',2,this)">Gallery 2</button>
     </div>
     <div class="gallery-panel active" id="gallery-thailand-1">
-      <div class="photo-stack" id="stack-thailand-1"></div>
-      <div class="empty-state" id="empty-thailand-1">Thailand — Gallery 1<span>Add photos using the code in your guide</span></div>
+      <div class="photo-stack" id="stack-thailand-1">
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="LL1005183.jpg" alt="Koh Samui Lamai Beach"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1020470.jpg" alt="Jomtien Beach"></div>
+        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1000780.jpg" alt="Patong Beach"></div>
+      </div>
+      <div class="empty-state" id="empty-thailand-1" style="display:none"></div>
     </div>
     <div class="gallery-panel" id="gallery-thailand-2">
       <div class="photo-stack" id="stack-thailand-2"></div>
@@ -377,7 +287,7 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- ═══ SCOTLAND ═══ -->
+  <!-- SCOTLAND -->
   <div class="page" id="page-scotland">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Scotland</div>
@@ -406,7 +316,7 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-  <!-- ═══ ENGLAND ═══ -->
+  <!-- ENGLAND -->
   <div class="page" id="page-england">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / England</div>
@@ -437,17 +347,15 @@
 
 </div>
 
-<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
-  <button class="lb-close" id="lb-close">✕</button>
-  <button class="lb-prev" id="lb-prev">‹</button>
-  <button class="lb-next" id="lb-next">›</button>
+  <button class="lb-close" id="lb-close">&#x2715;</button>
+  <button class="lb-prev" id="lb-prev">&#x2039;</button>
+  <button class="lb-next" id="lb-next">&#x203a;</button>
   <img class="lb-img" id="lb-img" src="" alt="">
   <div class="lb-counter" id="lb-counter"></div>
 </div>
 
 <script>
-/* ── Cover photo upload ── */
 function setCover(id,input){
   if(!input.files[0])return;
   var r=new FileReader();
@@ -459,8 +367,6 @@ function setCover(id,input){
   };
   r.readAsDataURL(input.files[0]);
 }
-
-/* ── Gallery tab switching ── */
 function switchGallery(country,num,btn){
   var tabs=btn.closest('.gallery-tabs').querySelectorAll('.gallery-tab');
   tabs.forEach(function(t){t.classList.remove('active')});
@@ -469,15 +375,11 @@ function switchGallery(country,num,btn){
   page.querySelectorAll('.gallery-panel').forEach(function(p){p.classList.remove('active')});
   document.getElementById('gallery-'+country+'-'+num).classList.add('active');
 }
-
-/* ── Lightbox ── */
 var lbPhotos=[];
 var lbIndex=0;
-
 function buildLightboxFromStack(stack){
   lbPhotos=Array.from(stack.querySelectorAll('img')).map(function(i){return i.src});
 }
-
 function openLightbox(stack,index){
   buildLightboxFromStack(stack);
   lbIndex=index;
@@ -485,52 +387,38 @@ function openLightbox(stack,index){
   document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow='hidden';
 }
-
 function showLbPhoto(){
   document.getElementById('lb-img').src=lbPhotos[lbIndex];
   document.getElementById('lb-counter').textContent=(lbIndex+1)+' / '+lbPhotos.length;
 }
-
 function closeLightbox(){
   document.getElementById('lightbox').classList.remove('open');
   document.body.style.overflow='';
 }
-
 function navLb(dir){
   lbIndex=(lbIndex+dir+lbPhotos.length)%lbPhotos.length;
   showLbPhoto();
 }
-
 document.getElementById('lb-close').addEventListener('click',closeLightbox);
 document.getElementById('lb-prev').addEventListener('click',function(){navLb(-1)});
 document.getElementById('lb-next').addEventListener('click',function(){navLb(1)});
-document.getElementById('lightbox').addEventListener('click',function(e){
-  if(e.target===this)closeLightbox();
-});
+document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox()});
 document.addEventListener('keydown',function(e){
   if(!document.getElementById('lightbox').classList.contains('open'))return;
   if(e.key==='Escape')closeLightbox();
   if(e.key==='ArrowLeft')navLb(-1);
   if(e.key==='ArrowRight')navLb(1);
 });
-
-/* ── Wire up existing photo-stack items on page load ── */
 function wireStack(stack){
   var items=stack.querySelectorAll('.photo-stack-item');
   items.forEach(function(item,i){
     item.addEventListener('click',function(){openLightbox(stack,i)});
   });
-  /* Hide empty state if photos exist */
-  var stackId=stack.id;
-  var emptyId=stackId.replace('stack-','empty-');
-  var emptyEl=document.getElementById(emptyId);
+  var emptyEl=document.getElementById(stack.id.replace('stack-','empty-'));
   if(emptyEl && items.length>0) emptyEl.style.display='none';
 }
-
 document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.photo-stack').forEach(function(stack){
-    wireStack(stack);
-  });
+  document.querySelectorAll('.photo-stack').forEach(function(stack){wireStack(stack)});
 });
 </script>
 </body>
