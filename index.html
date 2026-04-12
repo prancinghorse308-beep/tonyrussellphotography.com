@@ -123,7 +123,7 @@
   .gallery-panel{display:none}
   .gallery-panel.active{display:block}
 
-  /* ── 3 COLUMN PHOTO GRID ── */
+  /* ── 3 COLUMN UNIFORM GRID ── */
   .photo-stack{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -135,6 +135,7 @@
     overflow:hidden;
     position:relative;
     background:var(--sand);
+    aspect-ratio:3/2;
   }
   .photo-stack-item img{
     width:100%;
@@ -143,7 +144,7 @@
     display:block;
     transition:transform 0.5s ease;
   }
-  .photo-stack-item:hover img{transform:scale(1.04)}
+  .photo-stack-item:hover img{transform:scale(1.05)}
   .photo-stack-item .zoom-hint{
     position:absolute;inset:0;
     display:flex;align-items:center;justify-content:center;
@@ -284,7 +285,8 @@
       <button class="gallery-tab active" onclick="switchGallery('vietnam',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('vietnam',2,this)">Gallery 2</button>
     </div>
-    <div class="gallery-panel active" id="gallery-vietnam-1">
+
+<div class="gallery-panel active" id="gallery-vietnam-1">
   <div class="photo-stack" id="stack-vietnam-1">
     <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022208.jpg" alt="Lantern Boats, Hoa Lu"></div>
     <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040009.jpg" alt="Street vendor selling ginger"></div>
@@ -306,6 +308,7 @@
 </div>
     <div class="empty-state" id="empty-vietnam-1" style="display:none"></div>
     </div>
+
     <div class="gallery-panel" id="gallery-vietnam-2">
       <div class="photo-stack" id="stack-vietnam-2"></div>
       <div class="empty-state" id="empty-vietnam-2">Vietnam — Gallery 2<span>Add photos using the code in your guide</span></div>
@@ -313,7 +316,7 @@
     <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
   </div>
 
-<!-- ═══ CAMBODIA ═══ -->
+  <!-- ═══ CAMBODIA ═══ -->
   <div class="page" id="page-cambodia">
     <div class="gallery-header">
       <div class="breadcrumb"><label for="show-home">Home</label> / Cambodia</div>
@@ -332,10 +335,8 @@
       <button class="gallery-tab" onclick="switchGallery('cambodia',2,this)">Gallery 2</button>
     </div>
     <div class="gallery-panel active" id="gallery-cambodia-1">
-      <div class="photo-stack" id="stack-cambodia-1">
-        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1022208.jpg" alt="Lantern Boats, Hoa Lu"></div>
-      </div>
-      <div class="empty-state" id="empty-cambodia-1" style="display:none"></div>
+      <div class="photo-stack" id="stack-cambodia-1"></div>
+      <div class="empty-state" id="empty-cambodia-1">Cambodia — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
     <div class="gallery-panel" id="gallery-cambodia-2">
       <div class="photo-stack" id="stack-cambodia-2"></div>
@@ -363,15 +364,15 @@
       <button class="gallery-tab" onclick="switchGallery('thailand',2,this)">Gallery 2</button>
     </div>
     <div class="gallery-panel active" id="gallery-thailand-1">
-      <div class="photo-stack" id="stack-thailand-1">
-        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="LL1005183.jpg" alt="Koh Samui Lamai Beach"></div>
-        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1020470.jpg" alt="Jomtien Beach"></div>
-        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1000780.jpg" alt="Patong Beach"></div>
-        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040884.jpg" alt="Portrait, How An"></div>
-        <div class="photo-stack-item"><div class="zoom-hint"><div class="zoom-hint-icon">+</div></div><img src="L1040554.jpg" alt="Golden Bridge DaNang"</div>
-      </div>
-      <div class="empty-state" id="empty-thailand-1" style="display:none"></div>
+      <div class="photo-stack" id="stack-thailand-1"></div>
+      <div class="empty-state" id="empty-thailand-1">Thailand — Gallery 1<span>Add photos using the code in your guide</span></div>
     </div>
+    <div class="gallery-panel" id="gallery-thailand-2">
+      <div class="photo-stack" id="stack-thailand-2"></div>
+      <div class="empty-state" id="empty-thailand-2">Thailand — Gallery 2<span>Add photos using the code in your guide</span></div>
+    </div>
+    <footer><div class="footer-logo">Tony Russell <em>Photography</em></div><label class="footer-home" for="show-home">← Home</label></footer>
+  </div>
 
   <!-- ═══ SCOTLAND ═══ -->
   <div class="page" id="page-scotland">
@@ -386,7 +387,7 @@
       <label class="tab-btn tab-scotland" for="show-scotland">Scotland</label>
       <label class="tab-btn tab-england" for="show-england">England</label>
       <label class="tab-home-btn" for="show-home">← Home</label>
-    </div
+    </div>
     <div class="gallery-tabs">
       <button class="gallery-tab active" onclick="switchGallery('scotland',1,this)">Gallery 1</button>
       <button class="gallery-tab" onclick="switchGallery('scotland',2,this)">Gallery 2</button>
