@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Downloads | Tony Russell Photography</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --btn-free: #28a745;
+            --btn-shop: #007bff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 { font-size: 1.8rem; margin-bottom: 5px; }
+        p { color: #a0a0a0; font-size: 0.95rem; margin-top: 0; margin-bottom: 25px; }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .photo-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-details { padding: 15px; }
+
+        .btn {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            width: 100%;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn:active { opacity: 0.8; }
+        .btn-free { background-color: var(--btn-free); }
+        .btn-shop { background-color: var(--btn-shop); padding: 16px 20px; font-size: 1.1rem; }
+
+        .shop-box {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Your Free Photos</h1>
+            <p>Tony Russell Photography</p>
+        </header>
+
+        <div class="gallery-grid">
+            <!-- FREE PHOTO 1 -->
+            <div class="photo-card">
+                <!-- '../' looks outside the download folder to find your images -->
+                <img src="../images/free-photo1.jpg" alt="Free Photo 1">
+                <div class="card-details">
+                    <a href="../images/free-photo1.jpg" download="Tony_Russell_Free_1.jpg" class="btn btn-free">Download Free</a>
+                </div>
+            </div>
+
+            <!-- FREE PHOTO 2 -->
+            <div class="photo-card">
+                <img src="../images/free-photo2.jpg" alt="Free Photo 2">
+                <div class="card-details">
+                    <a href="../images/free-photo2.jpg" download="Tony_Russell_Free_2.jpg" class="btn btn-free">Download Free</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LINK TO PREMIUM STOREFRONT -->
+        <div class="shop-box">
+            <h2>Want more photos?</h2>
+            <p>View the rest of the collection for just 50¢ per high-res image.</p>
+            <!-- Replace this URL with your custom Payhip shop link -->
+            <a href="https://payhip.com" class="btn btn-shop">✨ View Premium Gallery</a>
+        </div>
+    </div>
+
+</body>
+</html>
